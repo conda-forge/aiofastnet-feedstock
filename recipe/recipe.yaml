@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.4"
+  version: "1.0.5"
 
 package:
   name: aiofastnet
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/tarasko/aiofastnet/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 45c87c6eda20815553f58e56323d3f929641ceef9d5d65011e0e4283466d68bd
+  sha256: 076ebe707c68c970c717dff68aba576e4ba35d59b8258acfee606a1628477080
 
 build:
   number: 0
