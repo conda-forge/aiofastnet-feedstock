@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.3"
+  version: "1.0.4"
 
 package:
   name: aiofastnet
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/tarasko/aiofastnet/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: b856b4127c44c05b0452756f0e0c1c25f5bb93ba38fbf1c20045352a50aca313
+  sha256: 45c87c6eda20815553f58e56323d3f929641ceef9d5d65011e0e4283466d68bd
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: match(python, "<3.11")
 
