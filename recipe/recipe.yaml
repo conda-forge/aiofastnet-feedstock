@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.1.1"
+  version: "1.2.0"
 
 package:
   name: aiofastnet
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/tarasko/aiofastnet/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 3a37bfa6b7a7482393bd0097c3b39ebf00385ad65725e75ad50e684003914e7c
+  sha256: 7f4285ee53dc71690038825cf7a87ba19534223b5f0798b435edd699d6f22119
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - python
     - setuptools >=78.0
     - cython >=3.3
+    - wheel
     - pip
   run:
     - python
