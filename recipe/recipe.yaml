@@ -8,11 +8,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/tarasko/aiofastnet/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7f4285ee53dc71690038825cf7a87ba19534223b5f0798b435edd699d6f22119
+  url: https://pypi.org/packages/source/a/aiofastnet/aiofastnet-${{ version }}.tar.gz
+  sha256: d1fa2500e287b7e31a88754724ce7bfcf8b83884a15547be4b5f7753946128c3
 
 build:
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: match(python, "<3.11")
 
